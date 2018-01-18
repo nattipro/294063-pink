@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Наталия Компанец]).
-* Наставник: `Неизвестно`.
+* Наставник: `Учусь сама`.
 
 ---
 
