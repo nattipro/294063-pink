@@ -99,11 +99,54 @@
 					<legend class="form-block__title">С каким приложением путешествовали?</legend>
 					<ul class="form-field">
 						<li>
-							<input class="form-field__input" type="radio" name="">
+							<input class="form-field__input" type="radio" name="user-os" value="ios" id="user-ios">
+							<label class="form-field__label" for="user-ios">Pink для iOS</label>
+						</li>
+						<li>
+							<input class="form-field__input" type="radio" name="user-os" value="android" id="user-android">
+							<label class="form-field__label" for="user-android">Pink на Android</label>
+						</li>
+						<li>
+							<input class="form-field__input" type="radio" name="user-os" value="windows" id="user-windows">
 						</li>
 					</ul>
 				</fieldset>
+				<fieldset class="form-block">
+					<legend class="form-block__title">Опишите свои эмоции</legend>
+					<textarea name="emotions" id="emotions-field" rows="6" cols="25">
+						Можно прям в красках, не стесняйтесь в выражениях
+					</textarea>
+				</fieldset>
+				<input class="contest-form__btn button" type="submit" value="Отправить форму">
+				<small class="contest-form__legend">
+					<sup>*</sup> - обязательные поля
+				</small>
 			</form>
 		</main>
+
+		<footer class="page-footer">
+			<a class="page-footer__logo" href="index.html">
+				<img class="page-footer__logo-image" src="#" width="" height="" alt="Pink">
+			</a>
+			<div class="page-footer__social social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright copyright">
+				<b class="copyright__text">Разработано</b>
+				<a class="copyright__logo" href="#">
+					<img class="copyright__logo-image" src="#">
+				</a>
+			</div>
+		</footer>
 	</body>
 </html>
