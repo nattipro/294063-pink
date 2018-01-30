@@ -1,0 +1,60 @@
+.form-block--grey {
+	background-color: $grey;
+}
+
+.form-checkbox {
+	list-style: none;
+}
+
+.form-field__label {
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $red;
+}
+
+.form-block__title {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $red;
+}
+
+.form-field__item {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 400;
+	color: $dark-blue;	
+}
+
+.form-checkbox__label {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 400;	
+}
+
+.form-btn {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2px solid $green;
+	color: $white;
+	background-color: $green;
+}
+
+.modal__title {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: $black;	
+}
+
+.modal__text {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: $dark-blue;
+}
