@@ -1,8 +1,10 @@
+@import "global/normalize.scss";
 // переменные
 @import "variables.scss";
 
 // глобальные стили
 @import "global/base.scss";
+@import "global/fonts.scss";
 
 // стили главной страници
 @import "blocks/page-header.scss";
