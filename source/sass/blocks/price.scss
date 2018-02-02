@@ -1,0 +1,36 @@
+.price {
+	background-color: $grey;
+}
+
+.pice__head {
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid $dark-blue;
+	background-color: $dark-blue;
+}
+
+.price__name {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;	
+	color: $white;
+}
+
+.price__value {
+	font-size: $fontsize;
+	line-height: 30px;
+	font-weight: 300;
+	color: $white;
+}
+
+.price__field {
+	border: 2px solid #e5e5e5;
+}
+
+.price__field-name {
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $dark-blue;
+}

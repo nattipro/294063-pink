@@ -1,0 +1,21 @@
+.upload {
+	background-color: $grey;	
+}
+
+.button {
+	padding: 20px 104px;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	border-radius: 50px;	
+}
+
+.upload__btn-submit {
+	border: 3px solid $red;
+	color: $red;
+}
+
+.upload__btn-reset {
+	border: 3px solid $dark-blue;
+	opacity: 0.2;
+}
