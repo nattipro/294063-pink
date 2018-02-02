@@ -1,1 +1,26 @@
-body { background: red; }
+@import "global/normalize.scss";
+// переменные
+@import "variables.scss";
+
+// глобальные стили
+@import "global/base.scss";
+@import "global/fonts.scss";
+
+// стили главной страници
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/download-app.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/slider.scss";
+@import "blocks/price.scss";
+@import "blocks/page-footer.scss";
+
+//стили страници фото
+@import "blocks/page-main.scss";
+@import "blocks/main-publications.scss";
+@import "blocks/upload.scss";
+@import "blocks/footer-inner.scss";
+
+//стили страници формы
+@import "blocks/form.scss";
