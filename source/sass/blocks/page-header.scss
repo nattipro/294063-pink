@@ -14,16 +14,10 @@
 	}
 }
 
-.page-header__logo {
-	padding: 23px;
-	width: 75px;
-	height: 23px;
-}
-
-
 .page-header__upbox {
 	width: 320px;
 	margin: 0 auto;	
+	padding: 20px;
 	background-color: $dark-blue;
 	border: 2px solid yellow;
 }
@@ -31,15 +25,15 @@
 @media (min-width: $tablet-width) {
 	.page-header__upbox {		
 		width: auto;
+		align-items: flex-start;
 	}
 }
-/*
-@media (min-width: $desktop-width) {
-	.page-header__upbox {		
-		height: 110px;
-	}
+
+.page-header__logo {
+	
+	width: 75px;
+	height: 23px;
 }
-*/
 
 .page-header__intro {
 	padding-top: 395px;	
