@@ -4,6 +4,7 @@
 
 .download-app__wrapper {
 	padding: 28px 20px;
+	border: 2px solid yellow;
 }
 
 .download-app__btn {
@@ -18,13 +19,19 @@
 }
 
 .download-app__list {
-	margin: 0;
+	margin: 0 auto;
+	margin-top: 49px;
 	padding: 0;
 	list-style: none;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	border: 2px solid red;
 }
 
 .download-app__text {
 	font-size: 14px;
 	line-height: 24px;
+	text-align: center;
 	color: $white;
 }

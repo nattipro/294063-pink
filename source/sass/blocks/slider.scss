@@ -1,7 +1,17 @@
-.slider__toggle {	
+.slider__toggles {
+	display: flex;
+	justify-content: center;
+}
+.slider__toggle {
+	margin: 15px;
 	width: 6px;
 	height: 6px;
 	background-color: #bec2c7;
 	border: none;
 	border-radius: 50%;
+}
+
+.slider__toggle--active {
+	background-color: $white;
+	border: 3px solid $dark-blue;
 }

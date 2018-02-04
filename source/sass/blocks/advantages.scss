@@ -2,6 +2,8 @@
 	background-color: $grey;
 }
 .advantages__header {
+	padding-top: 46px;
+	padding-bottom: 35px;
 	text-align: center;
 	background-color: $white;	
 }
@@ -14,8 +16,11 @@
 }
 
 .advantages__list {
+	display: flex;
+	flex-direction: column;
 	margin: 0;
-	padding: 0;
+	padding: 0 20px;
+	padding-top: 55px;
 	list-style: none;
 	text-align: center;	
 }
@@ -31,4 +36,9 @@
 	font-size: 14px;
 	line-height: 24px;
 	color: $dark-blue;
+}
+
+.advantages__pic {
+	display: block;
+	margin: 0 auto;
 }
