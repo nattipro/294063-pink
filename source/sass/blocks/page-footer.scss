@@ -1,14 +1,26 @@
-.page-footer {
+.page-footer {	
 	background-color: $white;
 }
+
+.page-footer__wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
 .contacts {
+	padding: 0 20px;
 	color: $dark-blue;
+	text-align: center;
 }
 
 .contacts__answer {
 	font-size: $fontsize;
 	line-height: 1.2;
-	font-weight: 300;	
+	font-weight: 300;
+	text-align: center;	
 }
 
 .contacts__title {
