@@ -1,0 +1,43 @@
+.endurance {
+	display: none;
+}
+
+@media(min-width: $tablet-width) {
+	.endurance {
+		display: block;
+		background-color: $white;
+		padding: 0 20px;
+		padding-top: 58px;
+	}
+	.endurance__wrapper {
+		display: flex;
+	}
+	.endurance__timer {
+		display: block;
+		margin-right: 60px;
+		width: 238px;
+		height: 276px;
+	}
+	.endurance__content {
+		display: block;
+		padding: 0 10px;
+		text-align: left;
+	}
+	.endurance__title {  /*как тут без <br>?*/
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 700;
+		color: $black;
+	}
+	.endurance__text {
+		font-size: 14px;
+		line-height: 24px;
+		color: $dark-blue;
+	}
+	.endurance__details {
+		font-size: 14px;
+		line-height: 24px;
+		text-decoration: underline;
+		color: $red;
+	}
+}

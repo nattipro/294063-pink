@@ -3,6 +3,18 @@
 	border: 2px solid green;
 }
 
+.page-main__container {
+	width: 320px;
+	margin: 0 auto;
+	border: 2px solid white;
+}
+
+@media(min-width: $tablet-width) {
+	.page-main__container {
+		width: 660px;		
+	}
+}
+
 .page-main__text {
 	font-size: 14px;
 	line-height: 30px;
