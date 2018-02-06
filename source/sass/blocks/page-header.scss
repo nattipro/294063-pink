@@ -23,7 +23,7 @@
 
 @media(min-width: $tablet-width) {
 	.page-header__upbox {		
-		width: 580px;
+		width: 620px;
 		align-items: flex-start;
 	}
 }
@@ -39,6 +39,14 @@
 	background-repeat: no-repeat;
 	background-position: center top;
 }
+
+@media(min-width: $tablet-width) {
+	.page-header__intro {
+		background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+		background-repeat: no-repeat;
+	}
+}
+
 
 @media(min-width: $desktop-width) {
 	.page-header__intro {

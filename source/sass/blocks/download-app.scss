@@ -2,6 +2,14 @@
 	background-color: $darken-blue;
 }
 
+@media(min-width: $tablet-width) {
+	.download-app {
+		margin-top: -330px;
+		margin-bottom: 112px;
+		background-color: transparent;
+	}
+}
+
 .download-app__wrapper {
 	padding: 28px 20px;
 	border: 2px solid yellow;
