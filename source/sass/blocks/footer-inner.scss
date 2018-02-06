@@ -1,7 +1,25 @@
+.footer-inner {
+	display: none;
+}
+
+@media(min-width: $tablet-width) {
+	.footer-inner {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
 .social__list {
 	list-style: none;
 }
 
+@media(min-width: $tablet-width) {
+	.social__list {
+		display: flex;
+
+	}
+}
 .social__item {
 	width: 45px;
 	height: 45px;
@@ -14,3 +32,6 @@
 	line-height: 18px;
 	font-weight: 400;
 }
+
+
+	

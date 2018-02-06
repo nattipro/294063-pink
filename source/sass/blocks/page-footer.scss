@@ -40,6 +40,11 @@
 	padding-bottom: 20px;
 }
 
+@media(min-width: $tablet-width) {
+	.contacts__item {
+	}
+}
+
 .contacts__title {
 	display: block;
 	font-size: 18px;
@@ -51,4 +56,20 @@
 	font-weight: 300;
 	text-decoration: none;
 	color: $red;
+}
+
+@media(min-width: $tablet-width) {
+	.contacts__map--mobile {
+		display: none;
+	}
+}
+
+.contacts__map--tablet {
+	display: none;
+}
+
+@media(min-width: $tablet-width) {
+	.contacts__map--tablet {
+		display: block;
+	}
 }
