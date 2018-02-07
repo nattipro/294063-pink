@@ -1,11 +1,13 @@
 .download-app {
+	order: 2;
+	width: 320px;
+	margin: 0 auto;
 	background-color: $darken-blue;
 }
 
 @media(min-width: $tablet-width) {
 	.download-app {
-		margin-top: -330px;
-		margin-bottom: 112px;
+		order: 0;
 		background-color: transparent;
 	}
 }
@@ -13,6 +15,10 @@
 .download-app__wrapper {
 	padding: 28px 20px;
 	border: 2px solid yellow;
+
+	@media(min-width: $tablet-width) {
+		
+	}
 }
 
 .download-app__title {
