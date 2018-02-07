@@ -51,7 +51,9 @@
 		background-repeat: no-repeat;
 	}
 
-	@media(min-width: $desktop-width) {
+	@media(min-width: $desktop-width) {		
+		width: 940px;
+		padding: 0 10px;
 		background: transparent;		
 	}
 }

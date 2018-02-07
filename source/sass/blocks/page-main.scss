@@ -1,18 +1,23 @@
 .page-main {
 	display: flex;
 	border: 2px solid green;
+
+	
 }
 
 .page-main__container {
 	width: 320px;
 	margin: 0 auto;
-	border: 2px solid white;
-}
+	border: 2px solid yellow;
 
-@media(min-width: $tablet-width) {
-	.page-main__container {
-		width: 660px;		
+	@media(min-width: $tablet-width) {
+		width: 660px;
 	}
+
+	@media(min-width: $desktop-width) {
+		width: 100%
+	}
+
 }
 
 .page-main__text {
