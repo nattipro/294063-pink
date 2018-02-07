@@ -16,6 +16,7 @@
 }
 
 .advantages__slogan {
+	margin: 0;
 	font-size: $fontsize;
 	line-height: 1.2;
 	font-weight: 300;
@@ -26,7 +27,12 @@
 	.advantages__slogan {
 		font-size: 40px;		
 	}
+	.advantages__slogan:last-child {
+		padding: 0 130px;
+	}
 }
+
+
 
 .advantages__list {
 	display: flex;

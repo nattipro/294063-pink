@@ -35,23 +35,28 @@
 
 .page-header__intro {
 	padding-top: 395px;	
-	background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
 }
 
 @media(min-width: $tablet-width) {
 	.page-header__intro {
-		background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+		background-image: url("../img/bg-back-tablet@1x.jpg");
 		background-repeat: no-repeat;
 	}
 }
-
 
 @media(min-width: $desktop-width) {
 	.page-header__intro {
 		background-position: left bottom;
 	}
+}
+
+.page-header__hand-mobile {	/* как её спозиционировать?*/
+    position: absolute;
+    left: 20px;
+    bottom: 0;
 }
 
 .page-header__intro--photo, 

@@ -42,6 +42,9 @@
 
 @media(min-width: $tablet-width) {
 	.contacts__item {
+		display: inline-block;
+		width: 295px;
+		padding-left: 10px;
 	}
 }
 
