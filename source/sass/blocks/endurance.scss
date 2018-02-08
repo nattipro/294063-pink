@@ -7,6 +7,12 @@
 		padding: 0 20px;
 		padding-top: 58px;
 	}
+
+	@media(min-width: $desktop-width) {
+		padding-top: 73px;
+		padding-bottom: 67px;
+		background-color: $grey;
+	}
 }
 
 .endurance__wrapper {
@@ -22,34 +28,70 @@
 	}
 }
 
-@media(min-width: $tablet-width) {
-	.endurance__timer {
+.endurance__timer {
+	@media(min-width: $tablet-width) {
 		display: block;
 		margin-right: 60px;
 		width: 238px;
 		height: 276px;
 	}
-	.endurance__content {
+
+	@media(min-width: $desktop-width) {
+		width: 298px;
+		height: 345px;
+	}
+}
+
+.endurance__content {
+	@media(min-width: $tablet-width) {	
 		display: block;
 		padding: 0 10px;
 		text-align: left;
 	}
-	.endurance__title {  /*как тут без <br>?*/
+
+	@media(min-width: $desktop-width) {
+		padding-top: 50px;
+	}	
+}
+
+.endurance__title {  /*как тут без <br>?*/
+	@media(min-width: $tablet-width) {
 		font-size: 30px;
 		line-height: 36px;
 		font-weight: 700;
 		color: $black;
 	}
-	.endurance__text {
+
+	@media(min-width: $desktop-width) {
+		line-height: 30px;
+	}
+}
+
+.endurance__text {
+	@media(min-width: $tablet-width) {
 		font-size: 14px;
 		line-height: 24px;
 		color: $dark-blue;
 	}
-	.endurance__details {
+
+	@media(min-width: $desktop-width) {
+		padding-right: 40px;
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+.endurance__details {
+	@media(min-width: $tablet-width) {
 		font-size: 14px;
 		line-height: 24px;
 		text-decoration: underline;
 		color: $red;
 	}
+	@media(min-width: $desktop-width) {
+		font-size: 18px;
+		line-height: 30px;
+	}
 }
+
 

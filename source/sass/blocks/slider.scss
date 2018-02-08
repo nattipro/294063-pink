@@ -1,7 +1,12 @@
 .slider__toggles {
 	display: flex;
 	justify-content: center;
+
+	@media(min-width: $tablet-width) {
+		display: none;
+	}
 }
+
 .slider__toggle {
 	margin: 15px;
 	width: 6px;
