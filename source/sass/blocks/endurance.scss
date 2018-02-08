@@ -1,17 +1,28 @@
 .endurance {
 	display: none;
-}
 
-@media(min-width: $tablet-width) {
-	.endurance {
+	@media(min-width: $tablet-width) {
 		display: block;
 		background-color: $white;
 		padding: 0 20px;
 		padding-top: 58px;
 	}
-	.endurance__wrapper {
+}
+
+.endurance__wrapper {
+	@media(min-width: $tablet-width) {
 		display: flex;
 	}
+
+	@media(min-width: $desktop-width) {
+		width: 940px;
+		padding: 0 10px;
+		margin: 0 auto;
+		border: 2px solid yellow;
+	}
+}
+
+@media(min-width: $tablet-width) {
 	.endurance__timer {
 		display: block;
 		margin-right: 60px;
@@ -41,3 +52,4 @@
 		color: $red;
 	}
 }
+
