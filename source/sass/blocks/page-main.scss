@@ -1,13 +1,11 @@
 .page-main {
-	display: flex;
-	border: 2px solid green;
-
-	
+	border: 2px solid green;	
 }
 
 .page-main__container {
 	width: 320px;
 	margin: 0 auto;
+	background-color: $white;
 	border: 2px solid yellow;
 
 	@media(min-width: $tablet-width) {
@@ -17,14 +15,20 @@
 	@media(min-width: $desktop-width) {
 		width: 100%
 	}
-
 }
 
+/*photo.html*/
+
 .page-main__text {
+	padding: 50px 38px;
 	font-size: 14px;
 	line-height: 30px;
-	font-weight: 400;
 	text-align: center;
 	background-color: $white;
+
+	@media(min-width: $tablet-width) {
+		padding: 80px 110px;
+		font-size: 18px;
+	}
 }
 

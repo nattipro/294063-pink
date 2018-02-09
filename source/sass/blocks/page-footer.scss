@@ -101,3 +101,12 @@
 	}
 }
 
+.contacts__map--desktop {
+	display: none;
+
+	@media(min-width: $desktop-width) { /*растянуть карту на всю ширину экрана */
+		display: block;
+		width: 100%;
+	}
+}
+

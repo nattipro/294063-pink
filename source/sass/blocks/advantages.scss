@@ -10,17 +10,18 @@
 }
 
 .advantages__slogan {
-	margin: 0;
 	font-size: $fontsize;
 	line-height: 1.2;
 	font-weight: 300;
 	color: $dark-blue;
+
+	@media(min-width: $tablet-width) {
+		margin: 0;
+		font-size: 40px;
+	}
 }
 
-@media(min-width: $tablet-width) {
-	.advantages__slogan {
-		font-size: 40px;		
-	}
+@media(min-width: $tablet-width){
 	.advantages__slogan:last-child {
 		padding: 0 130px;
 	}
