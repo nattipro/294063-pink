@@ -1,5 +1,9 @@
 .page-main {
-	border: 2px solid green;	
+	border: 2px solid green;
+
+	@media(min-width: $desktop-width) {		
+		background-color: $white;
+	}	
 }
 
 .page-main__container {
@@ -17,18 +21,45 @@
 	}
 }
 
+
+
 /*photo.html*/
 
+.page-main__wrapper {
+	width: 320px;
+	margin: 0 auto;
+	background-color: $white;
+	border: 2px solid red;  /*когда убираю обводку блок отлипает от верхнего ???*/
+
+	@media(min-width: $tablet-width) {
+		width: 660px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 940px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+}
+
+.main-publications {
+	margin: 0 20px;
+}
+
 .page-main__text {
-	padding: 50px 38px;
+	padding: 50px 35px;
 	font-size: 14px;
 	line-height: 30px;
 	text-align: center;
 	background-color: $white;
 
 	@media(min-width: $tablet-width) {
-		padding: 80px 110px;
+		padding: 80px 90px;
 		font-size: 18px;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding: 95px 180px;
 	}
 }
 

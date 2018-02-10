@@ -8,17 +8,17 @@
 	}
 }
 
-.social__list {
+.social__list { /*откуда берется отступ слева? */
+	display: flex;
+	width: 182px;
+	justify-content: space-around;
 	list-style: none;
-}
-
-@media(min-width: $tablet-width) {
-	.social__list {
-		display: flex;
-	}
+	border: 2px solid green;
 }
 
 .social__item {
+	margin: 0;
+	padding: 0;
 	width: 45px;
 	height: 45px;
 	border: 3px solid #e9ebec;
@@ -31,5 +31,8 @@
 	font-weight: 400;
 }
 
+/* стили для photo.html */
 
-	
+.foter-inner {
+
+	}
