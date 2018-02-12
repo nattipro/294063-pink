@@ -8,10 +8,11 @@
 	}
 }
 
-.social__list { /*откуда берется отступ слева? */
-	display: flex;
+.social__list { 
+	display: flex;	
 	width: 182px;
 	justify-content: space-around;
+	padding: 0;	
 	list-style: none;
 	border: 2px solid green;
 }
@@ -33,6 +34,24 @@
 
 /* стили для photo.html */
 
-.foter-inner {
+.footer-inner { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 320px;
+	margin: 0 auto; 
+	padding: 40px 0;
+	border: 2px solid yellow;
 
+	@media(min-width: $tablet-width) {		
+		flex-direction: row;
+		justify-content: space-between;
+		width: 620px;
+		padding: 0 20px;
 	}
+
+	@media(min-width: $desktop-width) {
+		width: 940px;
+		padding: 0 10px;
+	}
+}

@@ -1,9 +1,23 @@
+.main-publications__card {
+	margin-bottom: 20px;
+}
+
+.user-photo {
+	@media(min-width: $tablet-width) {
+		width: 300px;
+	}
+	 
+}
+
 .user-photo__details {
-	padding: 25px 0;
-	padding-left: 17px;
+	padding: 25px 15px;
 	font-size: 14px;
 	line-height: 24px;
 	background-color: $grey;
+
+	@media(min-width: $tablet-width) {
+		padding: 30px 25px;
+	}
 }
 
 .photo__hit {
