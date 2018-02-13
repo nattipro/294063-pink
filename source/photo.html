@@ -62,7 +62,7 @@
 					<div class="user-photo__image">
 						<img src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
 					</div>
-					<div class="user-photo__details photo__hit">
+					<div class="user-photo__details details__hit">
 						<cite class="user-photo__author">
 						<b class="user-photo__author-name">Анна</b>
 						<span class="user-photo__time">(5 минут назад)</span>
@@ -255,19 +255,21 @@
 				<div class="upload__image">
 					<img src="../img/photo-road-mobile@1x.jpg" width="280" height="364" alt="Новое фото">
 				</div>
-				<fieldset class="upload__controls">
-					<button class="upload_control upload__controls--crop upload_control--active" type="button">Кадрирование</button>
-					<button class="upload_control upload__controls--fill" type="button">Заливка</button>
-					<button class="upload_control upload__controls--contrast" type="button">Контрастность</button>
-				</fieldset>
-				<fieldset class="upload__controls">
-					<div class="upload__scale">Величина</div>
-					<div class="upload__roller"></div>
-				</fieldset>
-				<fieldset class="upload__submit">
-					<button class="button upload__btn-submit" type="submit">Запостить</button>
-					<button class="button upload__btn-reset" type="reset">Отмена</button>
-				</fieldset>
+				<div class="upload-controls__wrapper">
+					<fieldset class="upload__controls">
+						<button class="upload__control upload__controls--crop upload_control--active" type="button">Кадрирование</button>
+						<button class="upload__control upload__controls--fill" type="button">Заливка</button>
+						<button class="upload__control upload__controls--contrast" type="button">Контрастность</button>
+					</fieldset>
+					<fieldset class="upload__controls">
+						<div class="upload__scale">Величина</div>
+						<div class="upload__roller"></div>
+					</fieldset>
+					<fieldset class="upload__submit">
+						<button class="button upload__btn-submit" type="submit">Запостить</button>
+						<button class="button upload__btn-reset" type="reset">Отмена</button>
+					</fieldset>
+				</div>
 			</form>			
 			</div>
 		</main>
