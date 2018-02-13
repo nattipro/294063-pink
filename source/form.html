@@ -51,29 +51,36 @@
 	  	</header>
 
 		<main class="page-main">
-			<p class="page-main__text">
+			<div class="page-main__wrapper">
+			<p class="page-main__text page-main__text--form">
 				Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+			</p>
+			<p class="page-main__text page-main__text--form-tablet">
+				Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! 
+				Пожалуйста, заполните форму ниже:
 			</p>
 			<h2 class="visually-hidden">Пожалуйста, заполните форму ниже:</h2>
 			<form class="form" action="#">				
 				<fieldset class="form-block">
-					<div class="form-field">
+				<div class="form-block__wrapper">		
+					<div class="form-field__input">
 						<label class="form-field__label" for="last-name">Фамилия:</label>
 						<input class="form-field__item" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
 					</div>
-					<div class="form-field">
+					<div class="form-field__input">
 						<label class="form-field__label" for="first-name">Имя:</label>
 						<input class="form-field__item" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *" required>
 					</div>
-					<div class="form-field">
+					<div class="form-field__input">
 						<label class="form-field__label" for="middle-name">Отчество:</label>
 						<input class="form-field__item" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже" required>
 					</div>
+					</div>
 				</fieldset>
 				<fieldset class="form-block form-block--grey">
-					<legend class="form-block__title">
-						Ваши безбашенные достижения в путешествии
-					</legend>
+					<div class="form-block__wrapper">
+					<legend class="form-block__title">Ваши безбашенные достижения в путешествии</legend>
+					<h3 class="form-block__title--mobile">Ваши безбашенные достижения в путешествии</h3>
 					<ul class="form-checkbox">
 						<li>
 							<input class="form-checkbox__item" type="checkbox" name="shark" id="shark" checked>
@@ -99,20 +106,25 @@
 							<input class="form-checkbox__item" type="checkbox" name="hotel" id="hotel">
 							<label class="form-checkbox__label" for="hotel">Разгромил отель</label>
 						</li>
-					</ul>								
+					</ul>
+					</div>								
 				</fieldset>
 				<fieldset class="form-block">
-					<div class="form-field">
+					<div class="form-block__wrapper">
+					<div class="form-field__input">
 						<label class="form-field__label" for="phone">Номер телефона</label>
 						<input class="form-field__item" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
 					</div>
-					<div class="form-field">
+					<div class="form-field__input">
 						<label class="form-field__label" for="email">Адрес почты</label>
 						<input class="form-field__item" type="email" name="email" id="email" placeholder="Введите почту *">
 					</div>
+					</div>
 				</fieldset>
 				<fieldset class="form-block form-block--grey">
+					<div class="form-block__wrapper">
 					<legend class="form-block__title">С каким приложением путешествовали?</legend>
+					<h3 class="form-block__title--mobile">С каким приложением путешествовали?</h3>
 					<ul class="form-checkbox">
 						<li>
 							<input class="form-checkbox__input" type="radio" name="user-os" value="ios" id="user-ios" checked>
@@ -127,18 +139,22 @@
 							<label class="form-checkbox__label" for="user-windows">Windows Phone</label>
 						</li>
 					</ul>
+					</div>
 				</fieldset>
 				<fieldset class="form-block">
+					<div class="form-block__wrapper">
 					<legend class="form-block__title">Опишите свои эмоции</legend>
-					<textarea class="form-field__item" name="emotions" id="emotions-field" rows="6" cols="25">
-						Можно прям в красках, не стесняйтесь в выражениях
+					<h3 class="form-block__title--mobile">Опишите свои эмоции</h3>
+					<textarea  name="emotions" id="emotions-field">Можно прям в красках, не стесняйтесь в выражениях
 					</textarea>
+					</div>
 				</fieldset>
 				<input class="contest-form__btn form-btn" type="submit" value="Отправить форму">
 				<small class="contest-form__legend">
 					<sup>*</sup> - обязательные поля
 				</small>
 			</form>
+			</div>
 		</main>
 
 		<footer class="page-footer">	  			
@@ -199,19 +215,23 @@
 	  	</footer> 
 
 		<section class="modal modal--submitted">
- 	  		<h2 class="modal__title">Ваша заявка отправлена</h2>
- 	  		<p class="modal__text">
- 	  			Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.
- 	  		</p>
+ 	  		<div class="modal__info">
+ 	  			<h2 class="modal__title">Ваша заявка отправлена</h2>
+	 	  		<p class="modal__text">
+	 	  			Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+	 	  		</p>
+	 	  	</div>
  	  		<div class="modal__wrapper">
  	  			<button class="modal__button form-btn" type="button">Закрыть окно</button>
  	  		</div>
    		</section> 
    		<section class="modal modal--error">
-   			<h2 class="modal__title">Что-то пошло не так!</h2>
-   			<p class="modal__text">
-   				Проверьте поля, выделенные крассным, скорее всего вы забыли их заполнить
-   			</p>
+   			<div class="modal__info">
+	   			<h2 class="modal__title">Что-то пошло не так!</h2>
+	   			<p class="modal__text">
+	   				Проверьте поля, выделенные крассным, скорее всего вы забыли их заполнить
+	   			</p>
+   			</div>
    			<button class="modal__button form-btn" type="button">OK</button>
    		</section>    	
 	</body>
