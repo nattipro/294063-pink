@@ -1,9 +1,3 @@
-/* чтоб убрать обводки для форм.
-.form-block {
-	border: none;
-}
-*/
-
 .form {
 	display: flex;
 	flex-direction: column;
@@ -15,23 +9,79 @@
 }
 
 .form-block {
-	padding: 0;
-}
-
-.form-block__wrapper {
 	width: 280px;
 	margin: 0 auto;
+	padding: 0;
+	border: 2px solid red;
 
 	@media(min-width: $tablet-width) {
 		width: 620px;
+		margin: 20px;
 	}
 
 	@media(min-width: $desktop-width) {
 		width: 435px;
+		margin: 0;
 	}
 }
 
 
+.form-block--fio {
+	@media(min-width: $tablet-width) {
+		border: none;
+	}
+
+	@media(min-width: $desktop-width) {
+		margin-right: 65px;
+	}
+}
+
+.form-block--progress {
+	background-color: $grey;
+
+	@media(min-width: $tablet-width) {
+		order: 3;
+		background-color: $white;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 100%;
+	}
+}
+
+.form-block--contacts {
+	@media(min-width: $tablet-width) {
+		order: 2;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 100%;
+	}
+}
+
+.contacts__wrapper {
+	@media(min-width: $desktop-width) {
+		display: flex;
+	}
+}
+
+.form-block--app {
+	background-color: $grey;
+
+	@media(min-width: $tablet-width) {
+		background-color: $white;
+	}
+}
+
+.form-block--emotion {
+	@media(min-width: $tablet-width) {
+		order: 4;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 100%;
+	}
+}
 
 .form-field__input {
 	margin-bottom: 21px;
@@ -40,6 +90,20 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 45px;
+	}
+}
+
+.form-field__input--contacts {
+	@media(min-width: $tablet-width) {
+		flex-direction: column;
+		padding: 0 60px;
+		align-items: flex-start;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding-top: 26px;
+		padding-right: 14px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -53,6 +117,13 @@
 	@media(min-width: $tablet-width) {
 		padding-left: 0;
 	}	
+}
+
+.form-field__input--contacts > label {
+	@media(min-width: $tablet-width) {
+		order: 2;
+		padding-left: 24px;
+	}
 }
 
 .form-field__item {
@@ -71,12 +142,24 @@
 	}
 }
 
-.form-block--grey {
-	background-color: $grey;
+.form-field__input--contacts > input {
+	@media(min-width: $tablet-width) {
+		margin: 0;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 371px;
+	}
 }
 
 .form-checkbox {
 	list-style: none;
+}
+
+.form-checkbox--progress {
+	@media(min-width: $desktop-width) {
+		display: flex;
+	}
 }
 
 .form-block__title {
@@ -88,6 +171,8 @@
 
 	@media(min-width: $tablet-width) {
 		display: block;
+		padding: 20px 40px;
+		text-align: center;
 	}
 }
 
@@ -120,7 +205,6 @@
 	padding-left: 60px;
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: 400;	
 }
 
 textarea {
@@ -138,7 +222,34 @@ textarea {
 	color: $dark-blue;	
 
 	@media(min-width: $tablet-width) {
-		
+		width: 496px;
+		height: 189px;
+		margin: 20px 60px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 816px;
+		height: 124px;
+		margin-bottom: 45px;
+	}
+}
+
+.form-btn__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	border: 2px solid yellow;
+	
+	@media(min-width: $tablet-width) {
+		flex-direction: row;
+		order: 5;
+		margin: 0 20px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 100%;
+		margin: 0;
+		margin-top: 69px;
 	}
 }
 
@@ -153,6 +264,11 @@ textarea {
 	border: 2px solid $green;
 	color: $white;
 	background-color: $green;
+
+	@media(min-width: $tablet-width) {
+		margin: 0;
+		width: 300px;
+	}
 }
 
 .contest-form__legend {
@@ -160,6 +276,13 @@ textarea {
 	font-size: 14px;
 	text-align: center;
 	text-transform: uppercase;
+
+	border: 1px solid green;
+
+	@media(min-width: $tablet-width) {  
+	margin: 0;
+	align-self: center;
+	}
 }
 
 sup {
@@ -173,13 +296,11 @@ sup {
 	flex-direction: column;
 	width: 320px;
 	background-color: $white;
-}
 
-.modal__wrapper {
-	display: flex;
-	width: 100%;
-	padding: 50px 0;
-	background-color: $grey;
+	@media(min-width: $tablet-width) {
+		width: 460px;
+		align-items: center;
+	}
 }
 
 .modal__info {
@@ -187,6 +308,11 @@ sup {
 	padding-top: 45px;
 	padding-bottom: 35px;
 	text-align: center;
+
+	@media(min-width: $tablet-width) {
+		padding: 0 60px;
+		padding-top: 40px;
+	}
 }
 
 .modal__title {
@@ -194,11 +320,38 @@ sup {
 	line-height: 24px;
 	font-weight: 700;
 	color: $black;	
+
+	@media(min-width: $tablet-width) {
+		font-size: 30px;
+		line-height: 40px;		
+	}
 }
 
 .modal__text {
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 400;
 	color: $dark-blue;
+
+	@media(min-width: $tablet-width) {
+		font-size: 18px;		
+	}
+}
+
+.modal__wrapper {
+	display: flex;
+	width: 100%;
+	background-color: $grey;
+
+	@media(min-width: $tablet-width) {
+		justify-content: center;
+		margin-top: 40px;
+	}
+}
+
+.modal__button {
+
+	@media(min-width: $tablet-width) {
+		margin-top: 40px;
+		margin-bottom: 50px;
+	}
 }

@@ -60,8 +60,9 @@
 				Пожалуйста, заполните форму ниже:
 			</p>
 			<h2 class="visually-hidden">Пожалуйста, заполните форму ниже:</h2>
+
 			<form class="form" action="#">				
-				<fieldset class="form-block">
+				<fieldset class="form-block form-block--fio">
 				<div class="form-block__wrapper">		
 					<div class="form-field__input">
 						<label class="form-field__label" for="last-name">Фамилия:</label>
@@ -77,11 +78,12 @@
 					</div>
 					</div>
 				</fieldset>
-				<fieldset class="form-block form-block--grey">
-					<div class="form-block__wrapper">
+				<fieldset class="form-block form-block--progress">
 					<legend class="form-block__title">Ваши безбашенные достижения в путешествии</legend>
+					
+					
 					<h3 class="form-block__title--mobile">Ваши безбашенные достижения в путешествии</h3>
-					<ul class="form-checkbox">
+					<ul class="form-checkbox form-checkbox--progress">
 						<li>
 							<input class="form-checkbox__item" type="checkbox" name="shark" id="shark" checked>
 							<label class="form-checkbox__label" for="shark">Сделал селфи с акулой</label>
@@ -107,23 +109,25 @@
 							<label class="form-checkbox__label" for="hotel">Разгромил отель</label>
 						</li>
 					</ul>
-					</div>								
+													
 				</fieldset>
-				<fieldset class="form-block">
-					<div class="form-block__wrapper">
-					<div class="form-field__input">
+				<fieldset class="form-block form-block--contacts">
+					<legend class="form-block__title">Контактная информация</legend>
+					<div class="contacts__wrapper">
+					<div class="form-field__input form-field__input--contacts">
 						<label class="form-field__label" for="phone">Номер телефона</label>
 						<input class="form-field__item" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
 					</div>
-					<div class="form-field__input">
+					<div class="form-field__input form-field__input--contacts">
 						<label class="form-field__label" for="email">Адрес почты</label>
 						<input class="form-field__item" type="email" name="email" id="email" placeholder="Введите почту *">
 					</div>
 					</div>
 				</fieldset>
-				<fieldset class="form-block form-block--grey">
-					<div class="form-block__wrapper">
+				<fieldset class="form-block form-block--app">
 					<legend class="form-block__title">С каким приложением путешествовали?</legend>
+					<div class="form-block__wrapper">
+					
 					<h3 class="form-block__title--mobile">С каким приложением путешествовали?</h3>
 					<ul class="form-checkbox">
 						<li>
@@ -141,18 +145,21 @@
 					</ul>
 					</div>
 				</fieldset>
-				<fieldset class="form-block">
-					<div class="form-block__wrapper">
+				<fieldset class="form-block form-block--emotion">
 					<legend class="form-block__title">Опишите свои эмоции</legend>
+					<div class="form-block__wrapper">
+					
 					<h3 class="form-block__title--mobile">Опишите свои эмоции</h3>
-					<textarea  name="emotions" id="emotions-field">Можно прям в красках, не стесняйтесь в выражениях
+					<textarea  name="emotions" id="emotions-field">Можно прям в красках, не стесняясь в выражениях
 					</textarea>
 					</div>
 				</fieldset>
+				<div class="form-btn__wrapper">
 				<input class="contest-form__btn form-btn" type="submit" value="Отправить форму">
 				<small class="contest-form__legend">
 					<sup>*</sup> - обязательные поля
 				</small>
+				</div>
 			</form>
 			</div>
 		</main>
@@ -227,9 +234,9 @@
    		</section> 
    		<section class="modal modal--error">
    			<div class="modal__info">
-	   			<h2 class="modal__title">Что-то пошло не так!</h2>
+	   			<h2 class="modal__title">Что-то пошло не так!</h2> <!-- почему не перносится в планшетной версии?-->
 	   			<p class="modal__text">
-	   				Проверьте поля, выделенные крассным, скорее всего вы забыли их заполнить
+	   				Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
 	   			</p>
    			</div>
    			<button class="modal__button form-btn" type="button">OK</button>
