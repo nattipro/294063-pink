@@ -21,7 +21,7 @@
 	padding-top: 110px;	
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center -66px;
 	border: 2px solid green;
 
 	@media(min-width: $tablet-width) {
@@ -30,7 +30,7 @@
 		padding-top: 74px;
 		position: relative;
 		background-image: url("../img/bg-back-tablet@1x.jpg");
-		background-repeat: no-repeat;
+		background-position: center -110px;
 	}
 
 	@media(min-width: $desktop-width) {		
