@@ -61,6 +61,7 @@
 	background-color: transparent;
 	cursor: pointer;
 	border: none;
+	outline: none;
 
 	@media(min-width: $desktop-width) {
 		display: none;
@@ -127,7 +128,7 @@
 }
 
 .main-nav--closed .site-list {
-	display: none;	
+	display: none;
 }
 
 .main-nav--closed .main-nav__upbox {
@@ -177,6 +178,12 @@
 	}
 }
 
+.site-list__item--active {
+	@media(min-width: $desktop-width) {
+		border-bottom: 2px solid $white;
+	}
+}
+
 .site-list__link {
 	font-size: 18px;
 	line-height: 32px;
@@ -197,9 +204,13 @@
 	&:active {
 		color: $white;
 		opacity: 0.3;
-
-		@media(min-width: $desktop-width) {
-			border-bottom: 2px solid $white;
-		}
 	}
+}
+
+.main-nav--nojs .main-nav__button {
+	display: none;
+}
+
+.main-nav--nojs .site-list {
+	display: block;
 }

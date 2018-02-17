@@ -6,8 +6,9 @@
 	    <link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-	  	<header class="page-header">	  		  		
-		  	<nav class="main-nav main-nav--closed">
+	  	<header class="page-header">	  
+	  		<!--Отображение пунктов меню на мобильном ругулируется классом c модификатором closed и opened-->		  		
+		  	<nav class="main-nav main-nav--closed ">
 		  		<div class="main-nav__wrapper">	
 		  			<ul class="main-nav__upbox">
 		  				<li>
@@ -16,16 +17,17 @@
 			  				</a>
 			  			</li>
 			  			<li>
+			  				<!--Иконка открытия/закрытия меню отключается по классy c модификатором nojs-->
 			  				<button class="main-nav__button main-nav__button--burger" type="button">
 			  				<!--<img src="img/icon-menu-burger.svg" width="50" height="24">-->
 			  				</button>
 			  			</li>
 		  			</ul>	  				
 			  		<ul class="main-nav__list site-list">
-			  			<li class="site-list__item site-list__item--active">
+			  			<li class="site-list__item">
 			  				<a class="site-list__link" href="index.html">Главная</a>
 			  			</li>
-			  			<li class="site-list__item">
+			  			<li class="site-list__item site-list__item--active">
 			  				<a class="site-list__link" href="photo.html">Фотографии</a>
 			  			</li>
 			  			<li class="site-list__item">
