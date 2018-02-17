@@ -4,7 +4,6 @@
 	margin: 0 auto;
 	z-index: 1;
 	background-color: $darken-blue;
-	border: 2px solid yellow;
 
 	@media(min-width: $tablet-width) {
 		width: 300px;
@@ -21,8 +20,8 @@
 
 .download-app__wrapper {
 	padding: 0 20px;
-	padding-top: 48px;
-	padding-bottom: 30px;
+	padding-top: 42px;
+	padding-bottom: 17px;
 
 	@media(min-width: $tablet-width) {
 		padding: 0;
@@ -57,7 +56,7 @@
 }
 
 .download-app__btn {
-	padding: 17px 37px; 
+	padding: 13px 37px; 
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 700;
@@ -78,13 +77,13 @@
 
 .download-app__list {
 	margin: 0 auto;
-	margin-top: 49px;
-	padding: 0 30px;
+	margin-top: 46px;
+	margin-bottom: 18px;
+	padding: 0 20px;
 	list-style: none;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-around;
-	border: 2px solid red;
 
 	@media(min-width: $desktop-width) {
 		margin-top: 86px;

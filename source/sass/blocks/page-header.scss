@@ -4,7 +4,6 @@
 	width: 100%;
 	color: $white;
     background-color: rgba($black, 0.3);
-    border: 2px solid pink;  
 
     background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
@@ -30,7 +29,6 @@
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
 	background-position: center -66px;
-	border: 2px solid green;
 
 	@media(min-width: $tablet-width) {
 		flex-direction: row;
