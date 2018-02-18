@@ -1,6 +1,12 @@
 .reviews {
 	padding: 0 20px;
+	position: relative; 
+	top: -43px;
 	background-color: $white;
+
+	@media(min-width: $tablet-width) {
+		top: 0;
+	}
 }
 
 .reviews__wrapper {
@@ -13,15 +19,19 @@
 }
 
 .reviews__item {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
-	padding-top: 49px;
+	padding-top: 43px;
 
 	@media(min-width: $desktop-width) {
 		padding-top: 193px;
 	}
+}
+
+.reviews__item:nth-child(2) {
+	display: block;
 }
 
 .reviews__author {

@@ -134,7 +134,7 @@
 	  			<div class="endurance__wrapper">
 	  				<img class="endurance__timer" src="img/timer.png" width="238" height="276" alt="stopwatch">
 	  				<div class="endurance__content">
-		  				<p class="endurance__title">Эффект на 24 часа!</p> <!--как тут без <br>?-->
+		  				<p class="endurance__title">Эффект<br> на 24 часа!</p> <!--как тут без <br>?-->
 		  				<p class="endurance__text">
 		  					Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
 		  				</p>
@@ -150,32 +150,34 @@
 	  				</h2>
 		  			<div class="reviews__list slider__list">		
 		  				<blockquote class="reviews__item slider__item">
-		  					<cite class="reviews__author">Николай Петров
+		  					<cite class="reviews__author">Николай Петров 1
 		  						<p class="reviews__author-details">25 лет, водитель трамвая</p></cite>
 		  					<p class="reviews__text">
 		  						"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
 		  					</p>
 		  				</blockquote>
-		  				<!--
+		  				
 		  				<blockquote class="reviews__item slider__item">
-		  					<cite class="reviews__author"></cite>
-		  					<p class="reviews__text"></p>
+		  					<cite class="reviews__author">Николай Петров 2
+		  						<p class="reviews__author-details">25 лет, водитель трамвая</p></cite>
+		  					<p class="reviews__text">
+		  						"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+		  					</p>
 		  				</blockquote>
 		  				<blockquote class="reviews__item slider__item">
-		  					<cite class="reviews__author"></cite>
-		  					<p class="reviews__text"></p>
+		  					<cite class="reviews__author">Николай Петров 3
+		  						<p class="reviews__author-details">25 лет, водитель трамвая</p></cite>
+		  					<p class="reviews__text">
+		  						"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+		  					</p>
 		  				</blockquote>
-		  				-->
-		  				<div class="reviews__toggles slider__toggles">
-		  					<button class="slider__toggle slider__toggle--active" type="button">
-		  						<span class="visually-hidden">Первый отзыв</span>
-		  					</button>
-		  					<button class="slider__toggle" type="button">
-		  						<span class="visually-hidden">Второй отзыв</span>
-		  					</button>
-		  					<button class="slider__toggle" type="button">
-		  						<span class="visually-hidden">Третий отзыв</span>
-		  					</button>
+		  				<input class="visually-hidden" type="radio" id="slide-1" name="toggle">
+		  				<input class="visually-hidden" type="radio" id="slide-2" name="toggle">
+		  				<input class="visually-hidden" type="radio" id="slide-3" name="toggle">
+		  				<div class="reviews__toggles slider__toggles"> 
+		  					<label class="slider__toggle slider__toggle--1" for="slide-1">Первый отзыв</label>
+		  					<label class="slider__toggle slider__toggle--2" for="slide-2">Второй отзыв</label>
+		  					<label class="slider__toggle slider__toggle--3" for="slide-3">Третий слайд</label>
 		  				</div>
 		  			</div>
 		  		</div>

@@ -67,6 +67,12 @@
 	}
 }
 
+.endurance__content br {
+	@media(min-width: $desktop-width) {
+		display: none;
+	}
+}
+
 .endurance__text {
 	@media(min-width: $tablet-width) {
 		font-size: 14px;
