@@ -1,0 +1,103 @@
+.endurance {
+	display: none;
+
+	@media(min-width: $tablet-width) {
+		display: block;
+		background-color: $white;
+		padding: 0 20px;
+		padding-top: 58px;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding-top: 73px;
+		padding-bottom: 67px;
+		background-color: $grey;
+	}
+}
+
+.endurance__wrapper {
+	@media(min-width: $tablet-width) {
+		display: flex;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 940px;
+		padding: 0 10px;
+		margin: 0 auto;
+		border: 2px solid yellow;
+	}
+}
+
+.endurance__timer {
+	@media(min-width: $tablet-width) {
+		display: block;
+		margin-right: 60px;
+		width: 238px;
+		height: 276px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 298px;
+		height: 345px;
+	}
+}
+
+.endurance__content {
+	@media(min-width: $tablet-width) {	
+		display: block;
+		padding: 0 10px;
+		text-align: left;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding-top: 50px;
+	}	
+}
+
+.endurance__title {  /*как тут без <br>?*/
+	@media(min-width: $tablet-width) {
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 700;
+		color: $black;
+	}
+
+	@media(min-width: $desktop-width) {
+		line-height: 30px;
+	}
+}
+
+.endurance__content br {
+	@media(min-width: $desktop-width) {
+		display: none;
+	}
+}
+
+.endurance__text {
+	@media(min-width: $tablet-width) {
+		font-size: 14px;
+		line-height: 24px;
+		color: $dark-blue;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding-right: 40px;
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+.endurance__details {
+	@media(min-width: $tablet-width) {
+		font-size: 14px;
+		line-height: 24px;
+		text-decoration: underline;
+		color: $red;
+	}
+	@media(min-width: $desktop-width) {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+

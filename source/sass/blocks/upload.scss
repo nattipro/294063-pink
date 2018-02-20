@@ -1,16 +1,38 @@
 .upload {
-	background-color: $grey;	
+	padding: 0 20px;
+	padding-top: 20px;
+	background-color: $grey;
+
+	@media(min-width: $tablet-width ){
+		display: flex;
+	}	
+}
+
+.upload__image {
+	width: 280px;
+	height: 364px;
+
+	@media(min-width: $tablet-width) {
+		width: 300px;
+		height: 400px;
+	}
 }
 
 .button {
-	padding: 20px 104px;
+	width: 274px;
+	padding: 20px 0;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 700;
 	border-radius: 50px;	
 }
 
+.upload__submit {
+	padding: 40px 0;
+}
+
 .upload__btn-submit {
+	margin-bottom: 12px;
 	border: 3px solid $red;
 	color: $red;
 }

@@ -1,6 +1,77 @@
+.page-main {
+
+	@media(min-width: $desktop-width) {		
+		background-color: $white;
+	}	
+}
+
+.page-main__container {
+	width: 320px;
+	margin: 0 auto;
+	background-color: $white;
+
+	@media(min-width: $tablet-width) {
+		width: 660px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 100%
+	}
+}
+
+
+
+/*photo.html*/
+
+.page-main__wrapper {
+	width: 320px;
+	margin: 0 auto;
+	background-color: $white;
+	border: 2px solid red;  /*когда убираю обводку блок отлипает от верхнего ???*/
+
+	@media(min-width: $tablet-width) {
+		width: 660px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 940px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+}
+
 .page-main__text {
+	padding: 50px 35px;
 	font-size: 14px;
 	line-height: 30px;
-	font-weight: 400;
 	text-align: center;
+	background-color: $white;
+	border: 2px solid blue;
+
+	@media(min-width: $tablet-width) {
+		padding: 80px 90px;
+		font-size: 18px;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding: 95px 180px;
+	}
+}
+
+/* form.html */
+
+.page-main__text--form {
+	padding: 50px 20px;
+
+	@media(min-width: $tablet-width) {
+		display: none;
+	}
+}
+.page-main__text--form-tablet {
+	display: none;
+
+	@media(min-width: $tablet-width) {
+		display: block;
+		padding: 68px 85px;
+	}
 }

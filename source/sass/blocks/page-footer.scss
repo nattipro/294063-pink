@@ -1,17 +1,80 @@
+.page-footer {	
+	background-color: $white;
+}
+
+.page-footer__wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	margin: 0 auto;
+	border: 2px solid red;
+
+	@media(min-width: $tablet-width) {
+		width: 660px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 940px;
+		padding: 0 10px;
+	}
+}
+
 .contacts {
+	padding: 0 20px;
 	color: $dark-blue;
+	text-align: center;
+
+	@media(min-width: $desktop-width) {
+		display: flex;
+		}
 }
 
 .contacts__answer {
 	font-size: $fontsize;
 	line-height: 1.2;
-	font-weight: 300;	
+	font-weight: 300;
+	text-align: center;
+
+	@media(min-width: $tablet-width) {
+		margin-top: 56px;
+		padding: 0 120px;
+		font-size: 40px;
+	}	
+
+	@media(min-width: $desktop-width) {
+		margin-top: 75px;
+		padding: 0 235;
+		font-size: 50px;
+	}
+}
+
+.contacts__item {
+	padding-bottom: 20px;
+
+	@media(min-width: $tablet-width) {
+		display: inline-block;
+		width: 295px;
+		padding-left: 10px;
+		padding-bottom: 55px;
+	}
+}
+
+
+.contacts__item:nth-child(2) {
+	@media(min-width: $desktop-width) {
+		order: 2;
+	}
 }
 
 .contacts__title {
+	display: block;
 	font-size: 18px;
 	line-height: 1.2;
-	font-weight: 700;	
+	font-weight: 700;
+
+	@media(min-width: $desktop-width) {
+		padding-bottom: 30px;
+	}	
 }
 
 .contacts__text {
@@ -19,3 +82,31 @@
 	text-decoration: none;
 	color: $red;
 }
+
+@media(min-width: $tablet-width) {
+	.contacts__map--mobile {
+		display: none;
+	}
+}
+
+.contacts__map--tablet {
+	display: none;
+
+	@media(min-width: $tablet-width) {
+		display: block;
+	}
+
+	@media(min-width: $desktop-width) {
+		display: none;
+	}
+}
+
+.contacts__map--desktop {
+	display: none;
+
+	@media(min-width: $desktop-width) { /*растянуть карту на всю ширину экрана */
+		display: block;
+		width: 100%;
+	}
+}
+
