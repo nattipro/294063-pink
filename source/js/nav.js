@@ -1,4 +1,4 @@
-<script>
+
   var navMain = document.querySelector('.main-nav');
   var navButton = document.querySelector('.main-nav__button');
 
@@ -13,4 +13,3 @@
       navMain.classList.remove('main-nav--opened');
     }
   });
-</script>
