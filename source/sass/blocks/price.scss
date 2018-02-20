@@ -1,12 +1,58 @@
 .price {
+	padding-bottom: 100px;
 	background-color: $grey;
 }
 
-.pice__head {
+.price__wrapper {
+	@media(min-width: $desktop-width) {
+		width: 940px;
+		padding: 0 10px;
+		margin: 0 auto;
+		border: 2px solid green;
+	}
+}
+
+.price__list {
+	margin: 0 20px;
+
+	@media(min-width: $tablet-width) {
+		display: flex;
+		position: relative;
+		padding-left: 155px; 
+		padding-top: 110px;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding-left: 233px;
+	}
+}
+
+.price__item {
+	@media(min-width: $tablet-width) {
+		display: block;
+		width: 155px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 233px;
+	}
+}
+
+.price__head {
+	padding: 20px 0;
 	text-align: center;
 	text-transform: uppercase;
 	border: 2px solid $dark-blue;
 	background-color: $dark-blue;
+
+	@media(min-width: $tablet-width) {
+		
+	}
+}
+
+.price__head p {
+	margin: 0;
+	padding: 0;
 }
 
 .price__name {
@@ -14,6 +60,14 @@
 	line-height: 30px;
 	font-weight: 700;	
 	color: $white;
+
+	@media(min-width: $tablet-width) {
+		font-size: 16px;
+	}
+
+	@media(min-width: $desktop-width) {
+		font-size: 18px;
+	}
 }
 
 .price__value {
@@ -21,16 +75,81 @@
 	line-height: 30px;
 	font-weight: 300;
 	color: $white;
+
+	@media(min-width: $tablet-width) {
+		font-size: 18px;
+	}
+
+	@media(min-width: $desktop-width) {
+		font-size: $fontsize;
+	}
+}
+
+.price__content {
+	display: flex;
+	justify-content: space-between;
 }
 
 .price__field {
-	border: 2px solid #e5e5e5;
+	margin: 0;
+	padding: 0;
+	width: 210px;
+	list-style: none;
+
+	@media (min-width: $tablet-width) {
+		position: absolute;
+		left: 0;
+		width: 155px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 234px;
+	}
 }
 
 .price__field-name {
+	padding: 20px 0;
+	padding-left: 20px;
 	font-size: 14px;
 	line-height: 30px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: $dark-blue;
+	border-left: 2px solid #e5e5e5;
+	border-bottom: 2px solid #e5e5e5;
+
+	@media(min-width: $tablet-width) {
+			padding-left: 15px;
+			border-right: 2px solid #e5e5e5;
+		}
+
+	&:nth-child(1) {
+		@media(min-width: $tablet-width) {
+			border-top: 2px solid #e5e5e5;
+		}
+	}
+}
+
+.pice__choice {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 69px;
+
+	@media(min-width: $tablet-width) {
+		width: 100%;
+	}
+}
+
+.price__choice-mark {
+	padding: 21px 0;
+	border-right: 2px solid #e5e5e5;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.price__toggles {
+
+	@media(min-width: $tablet-width) {
+		display: none;
+	}
 }

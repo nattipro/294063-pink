@@ -152,16 +152,6 @@
 	}
 }
 
-.form-checkbox {
-	list-style: none;
-}
-
-.form-checkbox--progress {
-	@media(min-width: $desktop-width) {
-		display: flex;
-	}
-}
-
 .form-block__title {
 	display: none;
 	font-size: 14px;
@@ -195,6 +185,14 @@
 	margin: 0;
 	margin-top: 40px;
 	padding: 0;
+	list-style: none;
+}
+
+.form-checkbox--progress {
+	@media(min-width: $desktop-width) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .form-checkbox > li {

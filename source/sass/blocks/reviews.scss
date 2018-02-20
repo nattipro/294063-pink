@@ -19,19 +19,18 @@
 }
 
 .reviews__item {
-	display: none;
-	flex-direction: column;
 	margin: 0;
-	padding: 0;
-	padding-top: 43px;
+	padding: 43px 0;
+	text-align: center;
 
 	@media(min-width: $desktop-width) {
 		padding-top: 193px;
 	}
 }
 
-.reviews__item:nth-child(2) {
-	display: block;
+.item__wrapper {
+	display: flex;
+	flex-direction: column;
 }
 
 .reviews__author {
@@ -39,8 +38,7 @@
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
-	font-style: normal;
-	text-align: center;
+	font-style: normal;	
 	color: $black;
 
 	@media(min-width: $tablet-width) {	
