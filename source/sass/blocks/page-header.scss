@@ -89,8 +89,7 @@
 	padding-top: 35px;
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
-	background-position: center top;
-	border: 2px solid blue;
+	background-position: center -66px;
 
 	@media(min-width: $tablet-width) {
 		width: 620px;
