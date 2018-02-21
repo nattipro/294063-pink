@@ -37,18 +37,34 @@
 		padding-top: 27px;
 		padding-bottom: 43px;
 		align-items: flex-start;
+		border-bottom: 0;
 	}
 
 	@media(min-width: $desktop-width) {
 		width: 300px;
 		margin-right: 20px;		
 		background: transparent;
+		
 	}
 }
 
 .main-nav__logo {	
 	width: 75px;
 	height: 23px;
+
+	@media(min-width: $tablet-width) {
+		display: none;
+	}
+}
+
+.main-nav__logo--tablet {
+	display: none;
+
+	@media(min-width: $tablet-width) {
+		width: 147px;
+		height: 40px;
+		display: block;
+	}
 }
 
 .main-nav__button {	
@@ -153,7 +169,6 @@
 		justify-content: space-between; 
 		align-items: center;
 		width: 620px;
-		border: 2px solid blue;
 	}
 }
 
