@@ -2,10 +2,6 @@
 	position: relative;
 }
 
-.slider__wrapper {	
-	overflow: hidden;
-}
-
 .slider__list,
 .price__list {
 	margin: 0;
@@ -14,7 +10,6 @@
 }
 
 .slider__item {
-
 	@media(min-width: $desktop-width) {
 		width: 820px;
 	}
@@ -98,6 +93,9 @@
 	border-radius: 50%;
 }
 
+
+
+/*
 #slide-1:checked ~ .slider__controls .slider__control:nth-child(3),
 #slide-2:checked ~ .slider__controls .slider__control:nth-child(1),
 #slide-3:checked ~ .slider__controls .slider__control:nth-child(2) {
@@ -131,7 +129,7 @@
 #slide-3:checked ~ .slider__wrapper .slider__list {
 	margin-left: -1640px;
 }
-
+*/
 
 #price-1:checked ~ .price__list .price__item:nth-child(1) {
 	display: block;
@@ -158,3 +156,44 @@
 	border: 3px solid $dark-blue;
 	border-radius: 50%;
 }
+
+/* Слайдер jQuery */
+
+.bx-prev,
+.bx-next {
+	display: none;
+
+	@media(min-width: $desktop-width) {
+		display: block;
+	}
+}
+
+.bx-wrapper {
+	border: 0;
+	box-shadow: none;
+}
+
+.bx-pager {
+	padding: 0;
+}
+
+.bx-pager-item {	
+	margin: 0 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	width: 6px;
+	height: 6px;
+	background-color: #bec2c7;
+	border-radius: 50%;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	width: 6px;
+	height: 6px;
+	margin: -3px;
+	background-color: $white;
+	border: 3px solid $dark-blue;
+	border-radius: 50%;
+}
+
