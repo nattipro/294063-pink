@@ -14,22 +14,41 @@
 	justify-content: space-around;
 	padding: 0;	
 	list-style: none;
-	border: 2px solid green;
 }
 
-.social__item {
-	margin: 0;
-	padding: 0;
+.social__link {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
 	width: 45px;
 	height: 45px;
+	font-size: 0;
 	border: 3px solid #e9ebec;
-	border-radius: 50%;	
+	border-radius: 50%;
+}
+
+.social__link svg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.footer-inner__copyright {
 }
 
 .footer-inner__text {
+	display: inline-block;
+	padding-bottom: 15px;
 	font-size: 14px;
 	line-height: 18px;
-	font-weight: 400;
+	color: $dark-blue;
+	text-decoration: none;
+}
+
+.footer-inner__logo {
+	display: inline-block;
+	vertical-align: bottom;
 }
 
 /* стили для photo.html */

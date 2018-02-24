@@ -11,7 +11,8 @@
 	}
 
 	@media(min-width: $desktop-width) {
-		padding-top: 73px;
+		top: 0;
+		padding-top: 5px;
 		padding-bottom: 67px;
 		background-color: $grey;
 	}
@@ -26,7 +27,6 @@
 		width: 940px;
 		padding: 0 10px;
 		margin: 0 auto;
-		border: 2px solid yellow;
 	}
 }
 
@@ -52,7 +52,8 @@
 	}
 
 	@media(min-width: $desktop-width) {
-		padding-top: 50px;
+		padding: 0 8px;
+		padding-top: 65px;
 	}	
 }
 
@@ -66,10 +67,11 @@
 
 	@media(min-width: $desktop-width) {
 		line-height: 30px;
+		margin-bottom: 23px;
 	}
 }
 
-.endurance__content br {
+.endurance__title br {
 	@media(min-width: $desktop-width) {
 		display: none;
 	}
@@ -83,9 +85,18 @@
 	}
 
 	@media(min-width: $desktop-width) {
+		margin-bottom: 30px;
 		padding-right: 40px;
 		font-size: 18px;
 		line-height: 30px;
+	}
+}
+
+.endurance__text br {
+	display: none;
+
+	@media(min-width: $desktop-width) {
+		display: block;
 	}
 }
 

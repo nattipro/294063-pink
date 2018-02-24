@@ -37,13 +37,15 @@
 		padding-top: 27px;
 		padding-bottom: 43px;
 		align-items: flex-start;
-		border-bottom: 0;
 	}
 
 	@media(min-width: $desktop-width) {
 		width: 300px;
+		padding-right: 0;
+		padding-left: 0;
 		margin-right: 20px;		
 		background: transparent;
+		border-bottom: 0;
 		
 	}
 }
@@ -79,6 +81,10 @@
 	@media(min-width: $desktop-width) {
 		display: none;
 	}
+}
+
+.main-nav--closed .main-nav__upbox {
+	border-bottom: 0;
 }
 
 .main-nav--closed .main-nav__button::before {
@@ -202,7 +208,7 @@
 	color: $white;
 
 	@media(min-width: $desktop-width) {		
-		line-height: 18px;
+		line-height: 1.2;
 		font-weight: 400;
 	}
 }

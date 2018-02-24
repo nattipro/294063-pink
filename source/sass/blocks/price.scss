@@ -53,9 +53,12 @@
 	text-transform: uppercase;
 	border: 2px solid $dark-blue;
 	background-color: $dark-blue;
+}
 
+.price__head--hit {
 	@media(min-width: $tablet-width) {
-		
+		border-right: 2px solid $grey;
+		border-left: 2px solid $grey;
 	}
 }
 
@@ -148,6 +151,14 @@
 	@media(min-width: $tablet-width) {
 		width: 100%;
 	}
+}
+
+.price__choice-mark:first-child {
+	@media (min-width: $tablet-width) {
+		border-top: 2px solid $dark-blue;
+		border-radius: 0;
+	}
+	
 }
 
 .price__choice-mark {

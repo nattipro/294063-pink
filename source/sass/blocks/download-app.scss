@@ -30,7 +30,7 @@
 	}
 
 	@media(min-width: $desktop-width) {
-		padding-top: 22px;
+		padding-top: 10px;
 	}
 }
 
@@ -50,8 +50,10 @@
 	}
 
 	@media(min-width: $desktop-width) {
+		font-size: 50px;		
 		display: block;
-		margin-bottom: 72px;
+		margin: 0 30px;
+		margin-bottom: 50px;
 	}
 }
 
@@ -87,8 +89,9 @@
 	justify-content: space-around;
 
 	@media(min-width: $desktop-width) {
-		margin-top: 86px;
-		margin-bottom: 60px;
+		padding: 0 30px;
+		margin-top: 65px;
+		margin-bottom: 51px;
 	}
 }
 
