@@ -34,7 +34,7 @@
 .price__toggles {
 	position: absolute; 
 	left: 50%;
-	bottom: 45px;
+	bottom: 40px;
 	font-size: 0;	
   	transform: translateX(-50%);
 
@@ -49,7 +49,7 @@
 	display: inline-block;
 	width: 6px;
 	height: 6px;
-	padding: 8px;	
+	padding: 9px;	
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -175,6 +175,12 @@
 
 .bx-pager {
 	padding: 0;
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	@media(min-width: $tablet-width) {		
+	bottom: -45px;
+	}
 }
 
 .bx-pager-item {	
