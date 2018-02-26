@@ -1,5 +1,8 @@
-.page-footer {	
-	
+.page-footer {
+
+	@media(min-width: $desktop-width) {
+		background-color: $white;
+	}		
 }
 
 .page-footer__wrapper {
@@ -26,6 +29,7 @@
 
 	@media(min-width: $desktop-width) {
 		display: flex;
+		justify-content: space-between;
 		}
 }
 
@@ -46,8 +50,8 @@
 	}	
 
 	@media(min-width: $desktop-width) {
-		margin-top: 75px;
-		padding: 0 235;
+		margin-top: 65px;
+		padding: 0 235px;
 		font-size: 50px;
 	}
 }
@@ -60,14 +64,24 @@
 		width: 295px;
 		padding-left: 10px;
 		padding-bottom: 0;
-		padding-top: 55px;
+		padding-top: 45px;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding-top: 57px;
+		padding-left: 0;
 	}
 }
-
 
 .contacts__item:nth-child(2) {
 	@media(min-width: $desktop-width) {
 		order: 2;
+	}
+}
+
+.contacts__item:nth-child(3) {
+	@media(min-width: $desktop-width) {
+		margin: 0 65px;
 	}
 }
 
@@ -76,6 +90,10 @@
 	font-size: 18px;
 	line-height: 1.2;
 	font-weight: 700;
+
+	@media(min-width: $tablet-width) {
+		padding-bottom: 7px;
+	}
 
 	@media(min-width: $desktop-width) {
 		padding-bottom: 30px;
@@ -109,9 +127,9 @@
 .contacts__map--desktop {
 	display: none;
 
-	@media(min-width: $desktop-width) { /*растянуть карту на всю ширину экрана */
+	@media(min-width: $desktop-width) { 
 		display: block;
-		width: 100%;
+		margin: 0 auto;
 	}
 }
 

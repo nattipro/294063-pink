@@ -47,7 +47,7 @@
 	}
 }
 	
-@media(min-width: $tablet-width) {   /* как её спозиционировать?*/
+@media(min-width: $tablet-width) {  
 	.page-header__hand--mobile {
 		display: none;
 	}   
@@ -81,12 +81,17 @@
 	}
 }
 
+
+/*foto.html */
+
+
 .page-header__caption {
 	width: 280px;
 	height: 135px;
 	margin: 0 auto;
 	padding: 0 20px;
-	padding-top: 35px;
+	padding-top: 17px;
+	padding-bottom: 20px;
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
 	background-position: center -66px;
@@ -106,7 +111,8 @@
 	}
 }
 
-.page-header__title {	
+.page-header__title {
+
 	font-size: 24px;
 	line-height: 1.2;
 	font-weight: 300;
@@ -114,6 +120,7 @@
 	color: $white;
 
 	@media(min-width: $tablet-width) {
+		padding-top: 21px;
 		font-size: 50px;
 	}
 
