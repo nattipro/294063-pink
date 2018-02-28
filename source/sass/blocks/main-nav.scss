@@ -67,6 +67,20 @@
 		height: 40px;
 		display: block;
 	}
+
+	@media(min-width: $desktop-width) {
+		display: none;
+	}
+}
+
+.main-nav__logo--desktop {
+	display: none;
+
+	@media(min-width: $desktop-width) {
+		width: 147px;
+		height: 40px;
+		display: block;
+	}
 }
 
 .main-nav__button {	

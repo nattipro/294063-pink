@@ -13,11 +13,14 @@
 		  		<div class="main-nav__wrapper">	
 		  			<ul class="main-nav__upbox">
 		  				<li>
-			  				<a class="main-nav__logo" href="index.html">
-				  			<img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+			  				<a class="main-nav__logo" href="index.html">				  			
+			  					<img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
 			  				</a>
 			  				<a class="main-nav__logo--tablet" href="index.html">
-			  					<img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+			  					<img src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Pink">
+			  				</a>
+			  				<a class="main-nav__logo--desktop" href="index.html">
+			  					<img src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Pink">
 			  				</a>
 			  			</li>
 			  			<li>
@@ -57,7 +60,11 @@
 			<!--1-->
 			<article class="main-publications__card user-photo__hit">
 					<div class="user-photo__image">
-						<img src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+							<img src="../img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
+						</picture>
 					</div>
 					<div class="user-photo__details details__hit">
 						<div class="user-photo__author">
@@ -86,7 +93,11 @@
 				<!--2-->
 				<article class="main-publications__card user-photo"> <!-- как сделать карточки одинаковой высоты? --> 
 					<div class="user-photo__image">
-						<img src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+							<img src="../img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Машина">
+						</picture>
 					</div>
 					<div class="user-photo__details">
 						<div class="user-photo__author">
@@ -112,7 +123,11 @@
 				<!--3-->
 				<article class="main-publications__card user-photo">
 					<div class="user-photo__image">
-						<img src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x,jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+							<img src="../img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x,jpg 2x" alt="Барабанная установка">
+						</picture>
 					</div>
 					<div class="user-photo__details">
 						<div class="user-photo__author">
@@ -138,7 +153,11 @@
 				<!--4-->
 				<article class="main-publications__card user-photo">
 					<div class="user-photo__image">
-						<img src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Панорамное окно">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x,jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x,jpg 2x">
+							<img src="../img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Панорамное окно">
+						</picture>
 					</div>
 					<div class="user-photo__details">
 						<div class="user-photo__author">
@@ -164,7 +183,11 @@
 				<!--5-->
 				<article class="main-publications__card user-photo">
 					<div class="user-photo__image">
-						<img src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x,jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x,jpg 2x">
+							<img src="../img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Кубанская бахча">
+						</picture>
 					</div>
 					<div class="user-photo__details">
 						<div class="user-photo__author">
@@ -190,7 +213,11 @@
 				<!--6-->
 				<article class="main-publications__card user-photo">
 					<div class="user-photo__image">
-						<img src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид со скалы">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x,jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x,jpg 2x">
+							<img src="../img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Вид со скалы">
+						</picture>
 					</div>
 					<div class="user-photo__details">
 						<div class="user-photo__author">
@@ -216,7 +243,11 @@
 				<!--7-->
 				<article class="main-publications__card user-photo">
 					<div class="user-photo__image">
-						<img src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x,jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x,jpg 2x">
+							<img src="../img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крыло самолета">
+						</picture>
 					</div>
 					<div class="user-photo__details">
 						<div class="user-photo__author">
@@ -350,8 +381,9 @@
 				</div>
 			</div>		  	
 	  	</footer> 
+	  	<script src="js/picturefill.js"></script>
 
-	  	<script src="js/nav.js"></script> <!-- почему не подключается скрипт? -->
+	  	<script src="js/nav.js"></script> 
 
 	</body>
 </html>
