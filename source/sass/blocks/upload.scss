@@ -15,6 +15,13 @@
 	@media(min-width: $tablet-width) {
 		width: 300px;
 		height: 400px;
+		margin-top: 37px;
+	}
+}
+
+.upload__image img {
+	@media(min-width: $tablet-width) {
+		max-width: none;
 	}
 }
 

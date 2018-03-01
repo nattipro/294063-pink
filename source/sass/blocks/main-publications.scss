@@ -16,6 +16,8 @@
 }
 
 .user-photo__hit {
+	position: relative;
+
 	@media(min-width: $tablet-width) {
 		margin-bottom: 50px;
 	}
@@ -52,8 +54,34 @@
 	}	 
 }
 
-.user-photo__image {
-	overflow: hidden;
+.user-photo__image--hit::before {
+	content: "панорама дня";
+  display: block;
+  position: absolute;
+  z-index: 11;
+  width: 140px;
+  height: 31px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $red;
+  right: 20px;
+  text-align: center;
+  padding-top: 6px;
+
+  @media(min-width: $tablet-width) {
+  	top: 58px;
+  }
+}
+
+.user-photo__image--hit img{
+	@media(min-width: $tablet-width) {
+		height: 509px;
+		overflow: hidden;
+	}	
 }
 
 .user-photo__image img{
@@ -67,13 +95,28 @@
 	background-color: $grey;
 
 	@media(min-width: $tablet-width) {
-		padding: 30px 25px;
+		min-height: 117px;
+		padding: 25px 28px;
+		padding-bottom: 13px;
 		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 }
 
 .details__hit {
-	margin: 0 20px;
+	margin: 0 20px;	
+	padding: 19px;
+	font-size: 14px;
+	line-height: 24px;
+	background-color: $grey;
+
+	@media(min-width: $tablet-width) {
+		position: relative;
+		padding: 25px 28px;
+		padding-bottom: 13px;
+	} 
 
 	@media(min-width: $desktop-width) {
 		margin: 0;
@@ -93,20 +136,43 @@
 	margin-bottom: 11px;
 }
 
+.user-photo__like {
+	@media(min-width: $tablet-width) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+}
+
+.details__hit .user-photo__like {
+	@media(min-width: $tablet-width) {		
+		position: absolute;
+		top: 26px;
+		right: 30px;
+	}
+}
+
 .user-photo__button {
+	height: 21px;
 	padding: 0;
 	text-decoration: none;
 	border: none;
 	outline: none;
-	background-color: $grey;
+	background-color: transparent;
 	cursor: pointer;
 }
 
 .user-photo__like-count {
 	padding-left: 15px;
+	padding-right: 16px;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: $red;
+
+	@media(min-width: $tablet-width) {
+		padding-left: 0;
+		padding-bottom: 10px;
+	}
 }
 
 .main-publications__text {
@@ -117,6 +183,8 @@
 	line-height: 30px;
 
 	@media(min-width: $tablet-width) {
+		margin-top: 34px;
+		margin-bottom: 58px;
 		font-size: 18px;
 	}	
 }
