@@ -24,6 +24,20 @@
 
 /*photo.html*/
 
+.page-main__head {
+	width: 320px;
+	margin: 0 auto;
+	background-color: $white;
+
+	@media(min-width: $tablet-width) {
+		width: 660px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 1200px;
+	}
+}
+
 .page-main__wrapper {
 	width: 320px;
 	margin: 0 auto;
@@ -57,8 +71,8 @@
 	}
 
 	@media(min-width: $desktop-width) {
-		padding: 93px 180px;
-		padding-bottom: 83px;
+		padding: 93px 280px;
+		padding-bottom: 87px;
 	}
 }
 
