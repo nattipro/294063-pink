@@ -17,6 +17,11 @@
 		height: 400px;
 		margin-top: 37px;
 	}
+
+	@media(min-width: $desktop-width) {
+		margin-left: 60px;
+		margin-right: 40px;
+	}
 }
 
 .upload__image img {
@@ -33,6 +38,12 @@
 		flex-direction: column;
 		width: 280px;
 		margin-bottom: 55px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 425px;
+		margin-left: 35px;
+		margin-bottom: 35px;
 	}
 }
 
@@ -54,6 +65,10 @@
   		margin-left: 13px;
   		padding-top: 15px;
   	}
+
+  	@media(min-width: $desktop-width) {
+  		padding-top: 3px;
+  	}
 }
 
 .controls__setting-button {
@@ -66,6 +81,12 @@
 		padding-bottom: 25px;
 		text-align: left;		
 		border-bottom: 1px solid #dddfe0;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding-bottom: 11px;
+		margin-bottom: 12px;
+		margin-left: 0;
 	}
 }
 
@@ -103,6 +124,11 @@
 		width: 22px;
 		height: 22px;
 	}
+
+	@media(min-width: $desktop-width) {
+		width: 48px;
+		height: 48px;
+	}
 } 
 
 .controls__button-crop .controls__btn--active {
@@ -125,6 +151,11 @@
     @media(min-width: $tablet-width) {
 		width: 22px;
 		height: 22px;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 48px;
+		height: 48px;
 	}
 }
 
@@ -149,6 +180,12 @@
     	margin-top: 0;
 		width: 16px;
 		height: 16px;
+	}
+
+	@media(min-width: $desktop-width) {
+		margin: 8px;
+		width: 32px;
+		height: 32px;
 	}
 }
 
@@ -181,8 +218,6 @@
 	}
 }
 
-
-
 .upload__range {
 	position: absolute;
   	top: 94px;
@@ -192,6 +227,11 @@
 	@media(min-width: $tablet-width) {
 		top: 0;
 		margin-left: 52px;
+	}
+
+	@media(min-width: $desktop-width) {
+		top: 13px;
+		margin-left: 94px;
 	}
 }
 
@@ -204,6 +244,10 @@
 
   	@media(min-width: $tablet-width) {
   		width: 200px;
+  	}
+
+  	@media(min-width: $desktop-width) {
+  		width: 288px;
   	}
 }
 
@@ -236,6 +280,10 @@
 	@media(min-width: $tablet-width) {
 		width: 260px;
 	}
+
+	@media(min-width: $desktop-width) {
+		width: 183px;
+	}
 }
 
 .upload__submit {
@@ -246,6 +294,13 @@
 	@media(min-width: $tablet-width) {
 		padding: 0 45px;
 	}
+
+	@media(min-width: $desktop-width) {
+		margin: 0;
+    	margin-top: 98px;
+    	margin-left: 15px;
+    	padding: 0;
+	}
 }
 
 .upload__btn-submit {
@@ -255,6 +310,7 @@
 
 	@media(min-width: $tablet-width) {
 		margin-bottom: 22px;
+		margin-right: 37px;
 	}
 }
 
