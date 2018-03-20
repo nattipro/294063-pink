@@ -91,6 +91,8 @@
 
 	@media(min-width: $tablet-width) {
 		display: block;
-		padding: 68px 85px;
+		padding: 0 85px;
+		padding-top: 92px;
+		padding-bottom: 45px;
 	}
 }

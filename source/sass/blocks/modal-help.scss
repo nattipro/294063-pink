@@ -1,0 +1,90 @@
+.modal-help {
+
+	@media(min-width: $tablet-width) {
+	    width: 460px;
+	    height: 360px;
+	    margin: 0 auto;
+	    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	    border-radius: 5px;
+  }
+}
+
+.modal-help__wrapper {
+    width: 320px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.modal-help__title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    margin-bottom: 25px;
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+
+  	@media(min-width: $tablet-width) {
+	  	font-family: "Open Sans", "Arial", sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 40px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}  
+}
+
+.modal-help__text {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $dark-blue;
+
+    @media(min-width: $tablet-width) {
+	  	font-family: "Open Sans", "Arial", sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+		color: $dark-blue;
+  }
+}
+
+.modal-help__btn {
+    width: 280px;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $white;
+    text-transform: uppercase;
+
+    background-color: $green;
+
+    &:hover {
+	  background-color: #1c9b5e;
+    }
+
+    &:focus {
+	  color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media(min-width: $tablet-width) {
+  	  width: 300px;
+    }
+}
