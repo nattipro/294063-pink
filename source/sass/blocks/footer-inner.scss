@@ -96,8 +96,18 @@
 
 .footer-inner__logo {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: bottom;	
 }
+
+.footer-inner__logo-copyright {
+	width: 27px;
+  	height: 35px;
+  	background-image: url("../img/logo-htmlacademy.svg");
+  	background-repeat: no-repeat;
+  	display: inline-block;
+	vertical-align: bottom;	
+}
+
 
 /* стили для photo.html */
 
@@ -120,5 +130,20 @@
 	@media(min-width: $desktop-width) {
 		width: 940px;
 		padding: 94px 0;
+	}
+}
+
+
+/* стили для form.html */
+
+.footer-inner--form {
+	@media(min-width: $tablet-width) {
+		padding-top: 54px;
+		padding-bottom: 13px;
+	}
+
+	@media(min-width: $desktop-width) {
+		padding-top: 35px;
+		padding-bottom: 50px;
 	}
 }

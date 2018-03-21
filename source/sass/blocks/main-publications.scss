@@ -179,13 +179,19 @@
 }
 
 .user-photo__button {
-	height: 21px;
+	position: relative;	
+    width: 16px;
+    height: 13px; 
 	padding: 0;
+	margin-bottom: 15px;
+    margin-top: auto;
 	text-decoration: none;
 	border: none;
 	outline: none;
+	background-image: url("../img/icon-heart.svg");
+	background-repeat: no-repeat;
 	background-color: transparent;
-	cursor: pointer;
+	cursor: pointer;  
 }
 
 .user-photo__like-count {
