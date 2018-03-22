@@ -170,7 +170,21 @@
 
 .bx-wrapper {
 	border: 0;
-	box-shadow: none;
+	box-shadow: none;	
+}
+
+.bx-wrapper::before {
+	@media(min-width: $desktop-width) {
+		content: "";
+	    display: block;
+	    position: absolute;
+	    width: 80px;
+	    height: 65px;
+	    top: 19%;
+	    left: 46.4%;
+	    background-image: url("../img/icon-quotes.svg");
+	    background-repeat: no-repeat;
+	}
 }
 
 .bx-pager {
@@ -179,7 +193,11 @@
 
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
 	@media(min-width: $tablet-width) {		
-	bottom: -45px;
+		bottom: -45px;
+	}
+
+	@media(min-width: $desktop-width) {
+		display: none;
 	}
 }
 
@@ -201,5 +219,39 @@
 	background-color: $white;
 	border: 3px solid $dark-blue;
 	border-radius: 50%;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	width: 30px;
+    height: 30px;
+    top: 63%;
+    border: 2px solid #283645;
+    border-radius: inherit;
+    border-bottom: none;
+    border-left: none;
+    background: transparent;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.1;
+    }
+}
+
+.bx-wrapper .bx-prev {
+	transform: rotate(-135deg);
+    margin-left: 6px;
+    margin-bottom: 6px;
+    left: 0;
+}
+
+.bx-wrapper .bx-next {
+	transform: rotate(45deg);
+    margin-right: 6px;
+    margin-bottom: 6px;
+    right: 0;
 }
 
