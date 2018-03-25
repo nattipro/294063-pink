@@ -13,6 +13,17 @@
 	}
 }
 
+.price::before {
+    content: "";
+    display: block;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 47px;
+    margin-top: -103px;
+    margin-bottom: 56px;
+}
+
 .price__wrapper {
 
 	@media(min-width: $tablet-width) {
@@ -78,6 +89,32 @@
 		border-right: 2px solid $grey;
 		border-left: 2px solid $grey;
 	}
+}
+
+.price__head--hit::before {
+	content: "";
+    position: absolute;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 74px;
+    height: 73px;
+    top: 103px;
+    left: 20px;
+}
+
+.price__head--hit::after {
+	content: "хит";
+    position: absolute;   
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $white;
+    margin: 0;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    top: 114px;
+    left: 29px;
 }
 
 .price__head p {

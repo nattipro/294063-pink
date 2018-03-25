@@ -106,9 +106,9 @@
 	color: $red;
 }
 
-@media(min-width: $tablet-width) {
-	.contacts__map--mobile {
-		display: none;
+.contacts__map--mobile {	
+	@media(min-width: $tablet-width) {	
+		display: none;	
 	}
 }
 
