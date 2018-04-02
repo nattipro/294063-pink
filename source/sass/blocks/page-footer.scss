@@ -27,6 +27,10 @@
 	color: $dark-blue;
 	text-align: center;
 
+	@media(min-width: $tablet-width) {
+		margin-bottom: 33px;
+	}
+
 	@media(min-width: $desktop-width) {
 		display: flex;
 		justify-content: space-between;

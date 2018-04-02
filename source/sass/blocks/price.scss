@@ -22,6 +22,12 @@
     height: 47px;
     margin-top: -103px;
     margin-bottom: 56px;
+
+    @media(min-width: $tablet-width) {
+    	height: 60px;
+    	margin-top: -15px;
+    	margin-bottom: -44px;
+    }
 }
 
 .price__wrapper {
@@ -47,7 +53,7 @@
 	}
 
 	@media(min-width: $desktop-width) {
-		padding-top: 108px;
+		padding-top: 112px;
 		padding-left: 233px;
 	}
 }
@@ -101,6 +107,20 @@
     height: 73px;
     top: 103px;
     left: 20px;
+
+    @media(min-width: $tablet-width) {
+    	width: 58px;
+    	height: 58px;
+    	top: 83px;
+    	left: 312px;
+    }
+
+    @media(min-width: $desktop-width) {
+    	width: 74px;
+    	height: 73px;
+    	top: 112px;
+    	left: 471px;
+    }
 }
 
 .price__head--hit::after {
@@ -115,6 +135,16 @@
     transform: rotate(-45deg);
     top: 114px;
     left: 29px;
+
+    @media(min-width: $tablet-width) {
+    	top: 86px;
+    	left: 318px;
+    }
+
+     @media(min-width: $desktop-width) {
+     	top: 125px;
+    	left: 480px;
+    }
 }
 
 .price__head p {

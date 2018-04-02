@@ -4,12 +4,14 @@
 	@media(min-width: $tablet-width) {
 		display: flex;
 		justify-content: space-between;
-		padding: 32px 20px;
+		padding: 0 20px;
+		padding-bottom: 32px;
 		align-items: center;
 	}
 
 	@media(min-width: $desktop-width) {
-		padding: 68px 0;
+		padding: 48px 0;
+		padding-top: 38px;
 	}
 }
 

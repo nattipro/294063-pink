@@ -2,43 +2,21 @@
 	background-color: $grey;
 }
 
-.advantages__header {
-	padding-top: 16px;
-	padding-bottom: 35px;
-	text-align: center;
-	background-color: $white;
+.advantages::before {
+    content: "";
+    display: block;
+    height: 60px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
-	@media(min-width: $tablet-width) {
-		padding: 50px 0;
-	}
+    @media(min-width: $tablet-width) {
+    	height: 50px;
+    }
 
-	@media(min-width: $desktop-width) {
-		padding: 66px 0;
-	}	
-}
-
-.advantages__slogan {
-	padding-bottom: 7px;
-	font-size: $fontsize;
-	line-height: 1.2;
-	font-weight: 300;
-	color: $dark-blue;
-
-	@media(min-width: $tablet-width) {
-		margin: 0;
-		padding-bottom: 0;
-		font-size: 40px;
-	}
-
-	@media(min-width: $desktop-width) {				
-		font-size: 50px;
-	}
-}
-
-@media(min-width: $tablet-width){
-	.advantages__slogan:last-child {
-		padding: 0 130px;
-	}
+    @media(min-width: $desktop-width) {
+    	height: 110px;
+    }
 }
 
 .advantages-list__wrapper {
@@ -46,16 +24,21 @@
 
 	@media(min-width: $tablet-width) {	
 		display: flex;
-		padding: 0 20px;		
+		padding: 0 20px;
+		margin-top: -50px;		
 	}	
+
+	@media(min-width: $desktop-width) {
+		margin-top: -110px;
+	}
 }
 
-.advantages__list {  /*не могу раскидать ровненько элементы..?!?!*/
+.advantages__list {  
 	display: flex;
 	flex-direction: column;
 	margin: 0;
 	padding: 0 20px;
-	padding-top: 35px;
+	padding-top: 10px;
 	list-style: none;
 	text-align: center;	
 	

@@ -1,0 +1,93 @@
+.map {
+	margin: 0 auto;
+	display: block;
+	width: 320px;
+	height: 219px;
+	overflow: hidden;
+	position: relative;
+	background: 
+		url("../img/bg-map-mobile@1x.png") 50% 55% no-repeat,
+		url("../img/map-marker.svg") 50% 80% no-repeat;
+
+	@media(min-resolution: 144dpi, 1.5dppx) {
+		background-image: url("../img/bg-map-mobile@2x.jpg");
+		background-position: 50% 100%;
+		background-size: 100%;
+	}
+
+	@media(min-width: $tablet-width) {
+		width: auto;
+		height: 380px;
+		background: 
+			url("../img/map-marker.svg") 50% 80% no-repeat, 
+			url("../img/bg-map-tablet@1x.jpg") 50% 30% no-repeat;
+
+		@media(min-resolution: 144dpi, 1.5dppx) {
+			background-image: url("../img/bg-map-tablet@2x.jpg");
+      		background-size: 100%;
+		}
+	}
+
+	@media(min-width: $desktop-width) {
+		height: 480px;
+		margin-top: 45px;
+		background:
+      		url("../img/bg-map-desktop@1x.jpg") 50% 0% no-repeat,
+      		url("../img/map-marker.svg") 50% 80% no-repeat;
+
+      	@media(min-resolution: 144dpi, 1.5dppx) {
+      		background-image: url("../img/bg-map-desktop@2x.jpg");
+      		background-size: 100%;
+      	}
+	}
+}
+
+.map {
+	@media(min-width: $desktop-width) {
+		display: none;
+	}
+}
+
+.map--desktop {
+	@media(min-width: $desktop-width) {
+		margin-top: 0;
+	}
+}
+
+.map::before {
+    content: "";
+    display: block;
+    height: 65px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+
+    
+}
+.map--desktop::before {
+	@media(min-width: $desktop-width) {    	
+    	content: "";
+	    display: block;
+	    height: 90px;
+	    background-image: url("../img/bg-triangle-white-footer.svg");
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: 100% 100%;
+	    position: relative;
+	    z-index: 1;
+    }
+}
+
+.map iframe {
+	margin-top: -65px;	
+}
+
+.map--desktop iframe {
+	@media(min-width: $desktop-width) {
+		margin-top: -90px;
+	}
+}
+
