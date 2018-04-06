@@ -17,7 +17,7 @@
 
 .social {
 	margin-top: 33px;
-	margin-bottom: 22px; /*40*/
+	margin-bottom: 22px;
 }
 
 .social__list { 
@@ -79,12 +79,13 @@
 }
 
 .footer-inner__copyright {
-	padding-top: 14px;
+	
 }
 
 .footer-inner__text {
 	display: inline-block;
 	padding-right: 9px;
+	padding-top: 22px;
 	padding-bottom: 15px;
 	font-size: 14px;
 	line-height: 18px;
@@ -126,12 +127,12 @@
 		flex-direction: row;
 		justify-content: space-between;
 		width: 620px;
-		padding: 32px 20px;
+		padding: 0 20px;
 	}
 
 	@media(min-width: $desktop-width) {
 		width: 940px;
-		padding: 94px 0;
+		padding: 60px 0;
 	}
 }
 

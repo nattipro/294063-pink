@@ -52,7 +52,9 @@
 	justify-content: space-between;
 	position: relative;
 	margin: 0;
-	padding: 0;
+	margin-right: -20px;
+	margin-left: -20px;
+	padding: 0 55px;
   	padding-top: 18px;
   	padding-bottom: 35px;
   	font-size: 0;
@@ -62,8 +64,11 @@
   	@media(min-width: $tablet-width) {
   		flex-direction: column;
   		border: none;
+  		margin-right: 0;
   		margin-left: 13px;
   		padding-top: 15px;
+  		padding-left: 0;
+  		padding-right: 0;
   	}
 
   	@media(min-width: $desktop-width) {
@@ -101,10 +106,8 @@
 .controls__button-crop,
 .controls__button-fill,
 .controls__button-contrast {
-
-	@media(min-width: $tablet-width) {
-		position: relative;
-	}
+	position: relative;
+	
 }
 
 
@@ -194,7 +197,7 @@
 }
 
 .controls__button-fill {
-	margin-left: -103px;
+	margin-left: -49px;
 
 	@media(min-width: $tablet-width) {
 		margin-left: 0;
@@ -202,7 +205,7 @@
 }
 
 .controls__button-contrast {
-	margin-left: -86px;
+	margin-left: -50px;
 
 	@media(min-width: $tablet-width) {
 		margin-left: 0;
@@ -220,8 +223,8 @@
 
 .upload__range {
 	position: absolute;
-  	top: 94px;
- 	margin-left: 18px;
+  	top: 73px;
+ 	margin-left: -15px;
 
 
 	@media(min-width: $tablet-width) {
