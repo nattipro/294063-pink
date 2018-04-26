@@ -53,9 +53,14 @@
 	}
 }
 
-@media(min-width: $tablet-width){
-	.page-main__slogan:last-child {
-		padding: 0 130px;
+.page-main__slogan:last-child {
+	@media(min-width: $tablet-width){
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	@media(min-width: $desktop-width) {
+		width: 100%;
 	}
 }
 
@@ -63,25 +68,10 @@
 
 /*photo.html*/
 
-.page-main__head {
-	width: 320px;
-	margin: 0 auto;
-	background-color: $white;
-
-	@media(min-width: $tablet-width) {
-		width: 660px;
-	}
-
-	@media(min-width: $desktop-width) {
-		width: 1200px;
-	}
-}
-
 .page-main__wrapper {
 	width: 320px;
 	margin: 0 auto;
 	background-color: $white;
-	  /*когда убираю обводку блок отлипает от верхнего ???*/
 
 	@media(min-width: $tablet-width) {
 		width: 660px;
