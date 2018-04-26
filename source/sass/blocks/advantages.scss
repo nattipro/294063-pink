@@ -29,7 +29,7 @@
 	}	
 
 	@media(min-width: $desktop-width) {
-		margin-top: -110px;
+		margin-top: -100px;
 	}
 }
 
@@ -61,21 +61,40 @@
 }
 
 .advantages__item {
-
 	@media(min-width: $desktop-width) {
 		width: 300px;
-		padding-bottom: 233px;
-		text-align: center;	
-		position: relative;
+		text-align: center;
+	}
+}
+
+.advantages__item::before {
+	@media(min-width: $desktop-width) {
+		background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    	content: "";
+    	width: 292px;
+    	height: 302px;
+    	margin: 0 auto;
+    	margin-bottom: 55px;
+    	display: block;
+    	background-repeat: no-repeat;
+	}
+}
+
+.advantages__item:nth-of-type(2)::before {
+	@media(min-width: $desktop-width) {
+		background-image: url("../img/iphone-screen-2-desktop@1x.png");
+	}
+}
+
+.advantages__item:last-of-type::before {
+	@media(min-width: $desktop-width) {
+		background-image: url("../img/iphone-screen-3-desktop@1x.png");
 	}
 }
 
 .advantages__text {
 	@media(min-width: $desktop-width) {
-		padding: 45px 30px;
-		position: absolute;
-		bottom: 0;
-		background-color: $grey;
+		padding: 0 30px;
 	}
 }
 
